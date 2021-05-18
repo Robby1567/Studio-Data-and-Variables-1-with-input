@@ -12,25 +12,26 @@ let totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
 let fuelTempCelsius = "-225";
 let fuelLevel = "100%";
 let weatherStatus = "Clear";
+let dashes = "-------------------------------------";
 // Write code to generate the LC04 report here:
 // /n for line break
-console.log("-------------------------------------\n> LC04 - LAUNCH CHECKLIST\n-------------------------------------"); 
+console.log(dashes+"\n> LC04 - LAUNCH CHECKLIST\n"+dashes); 
 console.log("Date: "+date+ "\nTime: "+time);
 
-console.log("\n-------------------------------------\n> ASTRONAUT INFO \n-------------------------------------");
-console.log("* Count: "+astronautCount+"\n* Status: "+astronautStatus)
+console.log("\n"+dashes+"\n> ASTRONAUT INFO \n"+dashes);
+console.log("* Count: "+astronautCount+"\n* Status: "+astronautStatus);
 
-console.log("\n-------------------------------------\n> FUEL DATA \n-------------------------------------"); 
+console.log("\n"+dashes+"\n> FUEL DATA \n"+dashes); 
 console.log("* Fuel temp celsius: "+fuelTempCelsius+"\n* Fuel level: "+fuelLevel);
 
-console.log("\n-------------------------------------\n> MASS DATA \n-------------------------------------");
+console.log("\n"+dashes+"\n> MASS DATA \n"+dashes);
 console.log("* Crew mass: "+crewMassKg+" kg\n* Fuel mass: "+fuelMassKg+" kg\n* Shuttle mass: "+shuttleMassKg+" kg\n* Total mass: "+totalMassKg+" kg");
 
-console.log("\n-------------------------------------\n> FLIGHT PLAN \n-------------------------------------");
-console.log("* weather: "+weatherStatus)
+console.log("\n"+dashes+"\n> FLIGHT PLAN \n"+dashes);
+console.log("* weather: "+weatherStatus);
 
-console.log("\n-------------------------------------\n> OVERALL STATUS \n-------------------------------------");
-console.log("* Clear for takeoff: YES")
+console.log("\n"+dashes+"\n> OVERALL STATUS \n"+dashes);
+console.log("* Clear for takeoff: YES");
 // When done, have your TA check your code.
 
 
